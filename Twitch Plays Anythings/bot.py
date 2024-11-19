@@ -11,7 +11,7 @@ keyboard = Controller()
 class Bot(commands.Bot):
 
     def __init__(self):
-        super().__init__(token='oauth:166rl6u7as7q1nzw04936zmi9usrfm', prefix='!', initial_channels=['sosa___125']) #Le token représente une clé d'autentification que tu obtiens sur le site https://twitchapps.com/tmi/ 
+        super().__init__() 
     async def event_ready(self):
         #Message pour savoir si le bot est connecté
         print(f'Logged in as | {self.nick}')
